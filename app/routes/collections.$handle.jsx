@@ -96,8 +96,9 @@ function ProductItem({product, loading}) {
   const variant = product.variants.nodes[0];
   const variantUrl = useVariantUrl(product.handle, variant.selectedOptions);
   return (
+    <div className="product-item">
     <Link
-      className="product-item"
+      
       key={product.id}
       prefetch="intent"
       to={variantUrl}
@@ -116,6 +117,10 @@ function ProductItem({product, loading}) {
         <Money data={product.priceRange.minVariantPrice} />
       </small>
     </Link>
+    <div style={{marginTop: '10px'}}> 
+        <button>Add to cart</button>
+      </div>
+    </div>
   );
 }
 
