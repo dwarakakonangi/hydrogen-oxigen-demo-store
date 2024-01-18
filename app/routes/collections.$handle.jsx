@@ -118,7 +118,7 @@ function ProductItem({product, loading}) {
       </small>
     </Link>
     <div style={{marginTop: '10px'}}> 
-        <button>Add to cart</button>
+        <button>Add to cart test</button>
       </div>
     </div>
   );
