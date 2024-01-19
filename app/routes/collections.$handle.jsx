@@ -116,9 +116,10 @@ function ProductItem({product, loading}) {
       <small>
         <Money data={product.priceRange.minVariantPrice} />
       </small>
+      <h5>Piptext: {product.handle}</h5>
     </Link>
     <div style={{marginTop: '10px'}}> 
-        <button>Add to cart</button>
+        <button>Add to cart test demo</button>
       </div>
     </div>
   );
